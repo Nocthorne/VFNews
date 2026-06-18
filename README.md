@@ -153,9 +153,10 @@ A aplicação estará disponível em `http://localhost:5050`.
 
 ## 📸 Capturas de tela
 
-![Tela de análise](docs/verdadeiro.png)
-![Tela de análise](docs/falso.png)
-![Tela de status](docs/status.png)
+![Demonstração VFNews](docs/pratica.gif)
+![Tela de análise](docs/verdadeiro.PNG)
+![Tela de análise](docs/falso.PNG)
+![Tela de status](docs/status.PNG)
 
 ## 👤 Autor
 
