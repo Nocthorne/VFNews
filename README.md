@@ -163,7 +163,10 @@ A aplicação estará disponível em `http://localhost:5050`.
 
 Desenvolvedor focado em Python, Machine Learning aplicado e backend com Flask. Este projeto representa um estudo prático de como unir NLP, integração de APIs externas e persistência resiliente em uma aplicação real, de ponta a ponta.
 
-[LinkedIn](#) • [GitHub](#) • [E-mail](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gustavo%20Moreira-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-moreira-deev)
+[![GitHub](https://img.shields.io/badge/GitHub-Nocthorne-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Nocthorne)
+[![Gmail](https://img.shields.io/badge/Gmail-gustavomoreirast@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gustavomoreirast@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-gustavomoreira.deev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gustavomoreira.deev@gmail.com)
 
 ## 📄 Licença
 
