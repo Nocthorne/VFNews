@@ -1,0 +1,11 @@
+flask
+scikit-learn
+pandas
+joblib
+requests
+python-dotenv
+beautifulsoup4
+psycopg2-binary
+schedule
+langdetect
+factcheckexplorer @ git+https://github.com/GONZOsint/factcheckexplorer.git

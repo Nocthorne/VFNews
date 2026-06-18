@@ -1,0 +1,45 @@
+# --- Ambiente e segredos ---
+.env
+*.env
+!.env.example
+
+# --- Ambiente virtual ---
+.venv/
+venv/
+env/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Logs ---
+logs/*.log
+*.log
+
+# --- Banco de dados local / dumps ---
+*.sqlite3
+*.db
+*.sql
+
+# --- Sistema operacional ---
+.DS_Store
+Thumbs.db
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- Artefatos de ML grandes (opcional) ---
+# Descomente as linhas abaixo se preferir versionar o dataset e os modelos
+# via Git LFS em vez de commitá-los diretamente no repositório.
+# dataset_consolidado.csv
+# model.pkl
+# vectorizer.pkl
+
+# --- Histórico gerado em runtime ---
+historico_consultas.csv

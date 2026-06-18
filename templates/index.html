@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFNews | Análise de Notícias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo-icon">VF</div>
+            <div class="logo-text">
+                <h1>VFNews</h1>
+                <p>Verificação de Fatos</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-item active"><i class="fas fa-search"></i> Analisar</a>
+            <a href="#historico" class="nav-item"><i class="fas fa-history"></i> Histórico</a>
+            <a href="#status" class="nav-item"><i class="fas fa-server"></i> Status</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Section: Home/Analysis -->
+        <section id="home" class="page-section active">
+            <div class="hero-header">
+                <h2>Análise de Veracidade</h2>
+                <p>Cole ou digite a notícia para verificar sua procedência através de modelos estatísticos e bases de dados.</p>
+            </div>
+
+            <div class="analysis-card">
+                <div class="input-group">
+                    <label for="noticia-input">Conteúdo da Notícia</label>
+                    <textarea id="noticia-input" placeholder="Cole aqui a notícia, título, conteúdo ou qualquer informação que deseja verificar..."></textarea>
+                    <div id="char-count" class="char-count">0/5000</div>
+                </div>
+
+                <button id="btn-analisar" class="btn-primary">
+                    <div id="loading-spinner" class="spinner"></div>
+                    <span id="btn-text">Analisar notícia</span>
+                </button>
+
+                <div id="result-container" class="result-container">
+                    <div id="result-card" class="result-card">
+                        <div class="result-main">
+                            <div class="result-status">
+                                <span id="result-badge" class="status-badge">Verdadeiro</span>
+                                <span style="color: var(--text-secondary); font-size: 0.8rem;">Resultado da análise</span>
+                            </div>
+                            <h3 id="result-title" class="result-title">Verdadeiro</h3>
+                            <p id="result-explanation" class="result-explanation">
+                                A informação analisada é consistente com fontes confiáveis e verificadas.
+                            </p>
+                        </div>
+                        <div class="result-meta">
+                            <div class="confidence-circle">
+                                <span id="confidence-value" class="confidence-value">87%</span>
+                                <svg width="100" height="100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8" />
+                                    <circle id="confidence-progress" cx="50" cy="50" r="45" fill="none" stroke="var(--success)" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="40" />
+                                </svg>
+                            </div>
+                            <span class="source-label">Fonte</span>
+                            <span id="source-name" class="source-name">API Google Fact Check</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: History -->
+        <section id="historico" class="page-section">
+            <div class="hero-header">
+                <h2>Histórico de Verificações</h2>
+                <p>Veja suas verificações anteriores de notícias realizadas pelo sistema.</p>
+            </div>
+
+            <div class="history-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data/Hora</th>
+                            <th>Notícia</th>
+                            <th>Resultado</th>
+                            <th>Confiança</th>
+                            <th>Fonte</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-body">
+                        <!-- Content loaded via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Status -->
+        <section id="status" class="page-section">
+            <div class="hero-header">
+                <h2>Status dos Serviços</h2>
+                <p>Acompanhe o estado atual dos principais serviços e integrações do sistema.</p>
+            </div>
+
+            <div id="status-grid" class="status-grid">
+                <!-- Content loaded via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; color: var(--text-secondary); font-size: 0.8rem;">
+        <p>&copy; 2026 VFNews - Detecção de Fake News</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
